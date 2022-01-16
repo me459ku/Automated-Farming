@@ -1,6 +1,6 @@
-baseURL = 'https://me459ku.github.io/project_site_template'
+baseURL = 'https://me459ku.github.io/automated-farming'
 languageCode = 'en-us'
-title = 'Project Alpha'
+title = 'Automated Farming'
 theme = "learn"
 
 # For search functionality
