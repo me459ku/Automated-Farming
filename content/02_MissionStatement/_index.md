@@ -7,7 +7,7 @@ weight = 2
 Agriculture, alternatively referred to as farming, is the process of growing and harvesting plants and animals in order to produce food, fiber, and animal feed. Numerous agricultural products are utilized on a daily basis, from clothes to bed sheets. Agriculture can be summrized into five words: farming, food, fabric, flowers, and forestry. The origins of agriculture can be traced all the way back to the Fertile Crescent, a region in the Middle East. This region encompasses the modern states of Syria, Lebanon, Palestine, Jordan, Egypt, Cyprus, Turkey, and Iran, as well as the northern region of Kuwait. Agriculture began in the Neolithic era, approximately 10000 BCE and tools were made of stone.
 
 
-![](/Automated-Farming/img/stones.png)
+![](/img/stones.png)
 
 
 Agriculture continued to evolve during which new methods and tools for cultivating crops were developed, including crop rotation, mechanical harvesters, steam-powered tractors, and gasoline-powered tractors. Another agricultural boom occurred in the 20th century, specifically in agriculture chemistry, which includes the application of chemical fertilizer, chemical insecticides, and soil composition. Agricultural development is one of the most effective strategies for eradicating extreme poverty and feeding the growing population. Agriculture is also critical for economic growth, accounting for 4% of global gross domestic product (GDP) in 2018.
