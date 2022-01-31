@@ -1,0 +1,16 @@
+---
+title: "Final Concept Selection"
+date: 2022-01-16T09:40:39+03:00
+draft: false
+---
+
+
+After Reviewing multiple concepts and extensive research conducted for the previously mentioned products that are available in the market. The team has selected the Farmbot product as the starting point for their development. This decision was made for various reasons with the primary factor - contributing to this decision-making process - being the fact that in the benchmarking table shown previously the Farmbot concept covers most of the required target specifications discussed in the phase 1 report. Other important reasons have also played a great role in making the decision and they are listed below.
+### Course and budget limitations
+Unfortunately, the nature of this Capstone Design Course offers limited resources and a short timeline for the delivery of a proven and prototyped concept which in a way forces the team to settle with a simple or minor concept/problem to develop or fix. Thus, after looking at the various concepts discussed in the previous section from both budget and timeline perspectives the best decision was to select an already available concept in the market and direct the efforts of the team and their available resources to solve a problem with the existing concept or enhance its performance. For the limitations, the team has decided to select the Farmbot option shown previously.
+### Required experience and manufacturing capability
+Fully developing a concept from the ground up to require a great deal of previous experience which the team has none. Also, the lack of workshops in Kuwait and on-campus in combination with the limited raw material available especially for prototyping poses a barrier in the face of development and manufacturing.
+### Other reasons
+After contacting the manufacturer of Farmbot, the team was able to get crucial information about one of the mechanisms available in the product, which was the undesired weed wacking mechanism on the device (this will be discussed extensively later on), this mechanism introduced undesired vibrations to the system and had a fairly large minimum radius.
+The team was also able to coordinate with the manufacturer of Farmbot to figure out a procedure to use their developed design and weeding mechanism to be added to the open- source Farmbot project, meaning that the development done in this course will be used in a real-life project that other people can use for no cost, this fact contributed greatly in the selection of Farmbot.
+After further discussion with the people working on the Farmbot project it was decided that the team needs to do is develop a new weed eliminating mechanism thus it eliminated the cost of acquiring the full automated farming device, and now the team only needs to use minimal parts from the actual Farmbot device to make sure their developed concept is compliant with Farmbot and work on the integration from the newly developed concept side of things (will be discussed extensively).
