@@ -55,10 +55,71 @@ In the figure the pattern of which the laser will burn the weed is shown, the re
 After describing what happens in each operation of the code the pseudo-code is presented for each function below (Taking into consideration)
 
 ##### Initiation
+```
+Establish connection to 3D printer
+Open communication line to 3D printer
+Connect to & open webcam
+Command printer to go home (Calibrate)
+Command printer to go to home2 (MAX Z MID (X,Y))
+```
 ##### Scanning the area
+```
+Send Camera to Corner 1
+wait for printer to move Camera
+Take Snapshot1
+Send Camera to Corner 2
+wait for printer to move Camera
+Take Snapshot2
+Send Camera to Corner 3
+wait for printer to move Camera
+Take Snapshot3
+Send Camera to Corner 4
+wait for printer to move Camera
+Take Snapshot4
+Create empty canvas of predetermined size (array) Fille empty canvas
+Top left corner with Snapshot1
+Top right corner with Snapshot2
+Bottom right corner with Snapshot3
+Bottom left corner with Snapshot4
+Convert stitch image array to image type
+Crop stitched image to exclude undesired region Reference cropped image to real bed dimensions
+
+```
 ##### Detecting Red Dots
+```Create a mask for all anything red in the image assign a box around all white regions in masked image
+for number of boxes
+    if box area > known area in pixels of red magnet - 15%
+        store box coordinates
+    end
+end
+for number of selected boxes
+create array with of X and Y location after referencing + Static error
+end
+```
 ##### Honing In On Red Dots
+```
+Send printer to X and Y location of red dot (previously corrected) Take printer to specified height
+Take a snapshot.X
+Locate circle (Xc,Yc,R)
+while desired accuracy < current accuracy
+    move printer by 0.1(Xd-Xc)
+    get new circle location (X,Y,R)
+    if x is at center (with desired accuracy (factor))
+        break
+     end
+end
+
+Repeat above for Y
+
+Store final XYlocation of red magnet
+```
 ##### Eliminating The Red Dot
+```
+Send printer to XY location of magnet
+Generate archimedean from center of circle to edge Turn on Laser
+Move printer following spiral path
+Turn off Laser
+```
 
 ### Testing and Results
 In the figure below the red magnets used are shown before and after the burning process using the laser
