@@ -6,19 +6,19 @@
 <meta name=description content>
 <link rel=icon href=/Automated-Farming/images/favicon.png type=image/png>
 <title>A - Proof of Concept - Automated Farming</title>
-<link href=/Automated-Farming/css/nucleus.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/fontawesome-all.min.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/hybrid.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/featherlight.min.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/auto-complete.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/theme.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/tabs.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/hugo-theme.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/theme-blue.css?1643641085 rel=stylesheet>
-<link href=/Automated-Farming/css/foo.css?1643641085 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643641085 rel=stylesheet>
-<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643641085></script>
+<link href=/Automated-Farming/css/nucleus.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/fontawesome-all.min.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/hybrid.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/featherlight.min.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/auto-complete.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/theme.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/tabs.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/hugo-theme.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/theme-blue.css?1643641441 rel=stylesheet>
+<link href=/Automated-Farming/css/foo.css?1643641441 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643641441 rel=stylesheet>
+<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643641441></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/Automated-Farming/06_prototype/proof/>
@@ -34,10 +34,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643641085></script>
-<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643641085></script>
+<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643641441></script>
+<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643641441></script>
 <script type=text/javascript>var baseurl="https://me459ku.github.io/Automated-Farming"</script>
-<script type=text/javascript src=/Automated-Farming/js/search.js?1643641085></script>
+<script type=text/javascript src=/Automated-Farming/js/search.js?1643641441></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
@@ -198,29 +198,29 @@ A - Proof of Concept
 A - Proof of Concept
 </h1>
 <p>To validate the proposed solution with the limited budget constraint, it was decided to use a 3D printer to replication a Farmbot. The 3D printer was modified to have a webcam attached to it to be used as the weed scanning tool, and the laser to be used in the finalized Farmbot was also attached to the 3D printer to be a part of the prototype.</p>
-<p><img src=/images/Proof1.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof1.png alt></p>
 <p>The figure above shows the exact model used in the fabrication of the prototype and the choice of a 3D printer was obvious as it has a 3 axis gantry system
 which is exactly what Farmbot uses but this has a much smaller
 form factor and is widely available and more affordable. The
 reasons behind why this exact model was chosen are due to its low price and the fact that it has an open-source microcontroller and software that allowed the team to fully control the 3D printer through a serial connection with a USB cable. Since this is not a growing area and having weeds will cause a mess the weed was replaced with a red circle and a red whiteboard magnet such as the one presented in the figure below was used
-<img src=/images/Proof2.png alt></p>
+<img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof2.png alt></p>
 <h3 id=assembly>Assembly</h3>
 <p>As mentioned previously the 3D printer had a camera and a laser module attached to it. A custom-designed mounting bracket was designed specifically for this application and then it was printed using the 3D printer.</p>
-<p><img src=/images/Proof3.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof3.png alt></p>
 <p>The custom-designed mount is shown in the figure above. The mount allowed for a seamless mounting arrangement that did not impair nor interfere with the 3D printing functionality.</p>
-<p><img src=/images/Proof4.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof4.png alt></p>
 <p>The figure above shows the completed assembly of the prototype used for the purpose of the validation process.</p>
 <h3 id=computer-program>Computer Program</h3>
 <p>To control the assembly a computer program was developed to drive the mechanisms a satisfy the required physical objective, which is to the red magnet representing a weed and pinpoint its exact location and then triggers the laser and moves the laser around the red magnet to make sure that if it was a weed that it is most likely to be burnt. For the purpose of this project, MATLAB was since it was the programming tool with which the team members are familiar using.</p>
-<p><img src=/images/Proof5.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof5.png alt></p>
 <p>The logic for the computer program used to control the system is presented in the diagram in the figure above. When the device is first turned on it will calibrate its location and then go to the idle home location waiting for a command to search for weeds. The search for weeds command can be triggered either by a specific event such as time i.e. 7:00 am every Sunday or manually. After the scan command is triggered the computer software will drive the motors to move the camera to multiple locations to take a snapshot of the bed which in this case represents the growing area, then the previously taken images are stitched together to make the full image of the bed as shown below</p>
-<p><img src=/images/Proof6.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof6.png alt></p>
 <p>The figure above shows the images taken at a different location and then the stitched version. After stitching the images, the final stitched image is then referenced to real-life coordinates of the bed. After having a way to convert pixel location to mm location on the bed of the 3D printer, the image is analyzed and a mask is applied where anything that is red in the image is then turned into white with everything else being black as shown in the figure below.</p>
-<p><img src=/images/Proof7.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof7.png alt></p>
 <p>In the figure above it shows the masked red regions with boxes around them. The reason for the boxes is to be able to get the XY pixel location for the red magnets and to eliminate the noise in the image by only considering the boxes that meet certain criteria (in this case the area of the box) and reject all other boxes. The information of all confirmed boxes is then stored in a matrix format. After location each red magnet the 3D printer is then instructed to take the camera to the location of the first red dot in the matrix of red dots (order is not important in this case), the reason the camera is first taken to the red magnet before the laser is to pinpoint the exact location of the red magnet with a certain accuracy which reduces any errors from the previous location estimation process in a dramatic manner.
 The figure above shows the location of the red magnet before the enhancement and after and as it can be concluded that a great deal of correction has taken place. After doing so the distance from the head of the laser and the camera lens is known (in this case it is 48mm in the X and 23 mm in the Y). The printer will bring the lens of the laser to the center of the red magnet and then trigger the laser.
 In the figure the pattern of which the laser will burn the weed is shown, the reason this pattern (The Archimedean Spiral) was chosen was that the magnet was circular and it was fairly simple to manipulate without causing any damage to the bed of the 3D printer, another pattern is used when a weed is to be eliminated)</p>
-<p><img src=/images/Proof8.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof8.png alt></p>
 <h4 id=pseudo-code>Pseudo-code</h4>
 <p>After describing what happens in each operation of the code the pseudo-code is presented for each function below (Taking into consideration)</p>
 <h5 id=initiation>Initiation</h5>
@@ -281,13 +281,13 @@ Move printer following spiral path
 Turn off Laser
 </code></pre><h3 id=testing-and-results>Testing and Results</h3>
 <p>In the figure below the red magnets used are shown before and after the burning process using the laser</p>
-<p><img src=/images/Proof9.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof9.png alt></p>
 <p>As it can be seen that the laser was capable of melting the plastic cover of the white board magnet indicating that it will be powerful enough to burn organic leafs which will also be demonstrated in the following section of the report. The pattern used for attack (Archamedian spiral) can also be seen in the second burnt magnet on the right hand side.</p>
 <h3 id=proof-of-concept---weed-elimination>Proof of concept - weed elimination</h3>
 <p>In this section the results for burning an actual weed are shown. In the first figure below a small plant demonstrating a weed (in size) is used in a small, a perfectly healthy small plant.
-<img src=/images/Proof10.png alt></p>
+<img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof10.png alt></p>
 <p>The plant in the figure above will go throught the burning process and the results are shown below in the next figure.</p>
-<p><img src=/images/Proof11.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Proof11.png alt></p>
 <footer class=footline>
 </footer>
 </div>
@@ -298,16 +298,16 @@ Turn off Laser
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/Automated-Farming/js/clipboard.min.js?1643641085></script>
-<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643641085></script>
-<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643641085></script>
-<script src=/Automated-Farming/js/jquery.sticky.js?1643641085></script>
-<script src=/Automated-Farming/js/featherlight.min.js?1643641085></script>
-<script src=/Automated-Farming/js/highlight.pack.js?1643641085></script>
+<script src=/Automated-Farming/js/clipboard.min.js?1643641441></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643641441></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643641441></script>
+<script src=/Automated-Farming/js/jquery.sticky.js?1643641441></script>
+<script src=/Automated-Farming/js/featherlight.min.js?1643641441></script>
+<script src=/Automated-Farming/js/highlight.pack.js?1643641441></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643641085></script>
-<script src=/Automated-Farming/js/learn.js?1643641085></script>
-<script src=/Automated-Farming/js/hugo-learn.js?1643641085></script>
+<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643641441></script>
+<script src=/Automated-Farming/js/learn.js?1643641441></script>
+<script src=/Automated-Farming/js/hugo-learn.js?1643641441></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
