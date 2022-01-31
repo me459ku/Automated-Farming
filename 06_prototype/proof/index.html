@@ -6,19 +6,19 @@
 <meta name=description content>
 <link rel=icon href=/Automated-Farming/images/favicon.png type=image/png>
 <title>A - Proof of Concept - Automated Farming</title>
-<link href=/Automated-Farming/css/nucleus.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/fontawesome-all.min.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/hybrid.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/featherlight.min.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/auto-complete.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/theme.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/tabs.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/hugo-theme.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/theme-blue.css?1643635743 rel=stylesheet>
-<link href=/Automated-Farming/css/foo.css?1643635743 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643635743 rel=stylesheet>
-<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643635743></script>
+<link href=/Automated-Farming/css/nucleus.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/fontawesome-all.min.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/hybrid.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/featherlight.min.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/auto-complete.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/theme.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/tabs.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/hugo-theme.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/theme-blue.css?1643638253 rel=stylesheet>
+<link href=/Automated-Farming/css/foo.css?1643638253 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643638253 rel=stylesheet>
+<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643638253></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/Automated-Farming/06_prototype/proof/>
@@ -34,10 +34,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643635743></script>
-<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643635743></script>
+<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643638253></script>
+<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643638253></script>
 <script type=text/javascript>var baseurl="https://me459ku.github.io/Automated-Farming"</script>
-<script type=text/javascript src=/Automated-Farming/js/search.js?1643635743></script>
+<script type=text/javascript src=/Automated-Farming/js/search.js?1643638253></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
@@ -224,11 +224,62 @@ In the figure the pattern of which the laser will burn the weed is shown, the re
 <h4 id=pseudo-code>Pseudo-code</h4>
 <p>After describing what happens in each operation of the code the pseudo-code is presented for each function below (Taking into consideration)</p>
 <h5 id=initiation>Initiation</h5>
-<h5 id=scanning-the-area>Scanning the area</h5>
-<h5 id=detecting-red-dots>Detecting Red Dots</h5>
-<h5 id=honing-in-on-red-dots>Honing In On Red Dots</h5>
-<h5 id=eliminating-the-red-dot>Eliminating The Red Dot</h5>
-<h3 id=testing-and-results>Testing and Results</h3>
+<pre tabindex=0><code>Establish connection to 3D printer
+Open communication line to 3D printer
+Connect to &amp; open webcam
+Command printer to go home (Calibrate)
+Command printer to go to home2 (MAX Z MID (X,Y))
+</code></pre><h5 id=scanning-the-area>Scanning the area</h5>
+<pre tabindex=0><code>Send Camera to Corner 1
+wait for printer to move Camera
+Take Snapshot1
+Send Camera to Corner 2
+wait for printer to move Camera
+Take Snapshot2
+Send Camera to Corner 3
+wait for printer to move Camera
+Take Snapshot3
+Send Camera to Corner 4
+wait for printer to move Camera
+Take Snapshot4
+Create empty canvas of predetermined size (array) Fille empty canvas
+Top left corner with Snapshot1
+Top right corner with Snapshot2
+Bottom right corner with Snapshot3
+Bottom left corner with Snapshot4
+Convert stitch image array to image type
+Crop stitched image to exclude undesired region Reference cropped image to real bed dimensions
+
+</code></pre><h5 id=detecting-red-dots>Detecting Red Dots</h5>
+<pre tabindex=0><code class=language-Create data-lang=Create>for number of boxes
+    if box area &gt; known area in pixels of red magnet - 15%
+        store box coordinates
+    end
+end
+for number of selected boxes
+create array with of X and Y location after referencing + Static error
+end
+</code></pre><h5 id=honing-in-on-red-dots>Honing In On Red Dots</h5>
+<pre tabindex=0><code>Send printer to X and Y location of red dot (previously corrected) Take printer to specified height
+Take a snapshot.X
+Locate circle (Xc,Yc,R)
+while desired accuracy &lt; current accuracy
+    move printer by 0.1(Xd-Xc)
+    get new circle location (X,Y,R)
+    if x is at center (with desired accuracy (factor))
+        break
+     end
+end
+
+Repeat above for Y
+
+Store final XYlocation of red magnet
+</code></pre><h5 id=eliminating-the-red-dot>Eliminating The Red Dot</h5>
+<pre tabindex=0><code>Send printer to XY location of magnet
+Generate archimedean from center of circle to edge Turn on Laser
+Move printer following spiral path
+Turn off Laser
+</code></pre><h3 id=testing-and-results>Testing and Results</h3>
 <p>In the figure below the red magnets used are shown before and after the burning process using the laser</p>
 <p><img src=/images/Proof9.png alt></p>
 <p>As it can be seen that the laser was capable of melting the plastic cover of the white board magnet indicating that it will be powerful enough to burn organic leafs which will also be demonstrated in the following section of the report. The pattern used for attack (Archamedian spiral) can also be seen in the second burnt magnet on the right hand side.</p>
@@ -247,16 +298,16 @@ In the figure the pattern of which the laser will burn the weed is shown, the re
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/Automated-Farming/js/clipboard.min.js?1643635743></script>
-<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643635743></script>
-<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643635743></script>
-<script src=/Automated-Farming/js/jquery.sticky.js?1643635743></script>
-<script src=/Automated-Farming/js/featherlight.min.js?1643635743></script>
-<script src=/Automated-Farming/js/highlight.pack.js?1643635743></script>
+<script src=/Automated-Farming/js/clipboard.min.js?1643638253></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643638253></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643638253></script>
+<script src=/Automated-Farming/js/jquery.sticky.js?1643638253></script>
+<script src=/Automated-Farming/js/featherlight.min.js?1643638253></script>
+<script src=/Automated-Farming/js/highlight.pack.js?1643638253></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643635743></script>
-<script src=/Automated-Farming/js/learn.js?1643635743></script>
-<script src=/Automated-Farming/js/hugo-learn.js?1643635743></script>
+<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643638253></script>
+<script src=/Automated-Farming/js/learn.js?1643638253></script>
+<script src=/Automated-Farming/js/hugo-learn.js?1643638253></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
