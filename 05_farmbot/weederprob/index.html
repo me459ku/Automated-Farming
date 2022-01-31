@@ -5,7 +5,7 @@
 <meta name=generator content="Hugo 0.92.1">
 <meta name=description content>
 <link rel=icon href=/Automated-Farming/images/favicon.png type=image/png>
-<title>Mission Statement - Automated Farming</title>
+<title>C - Weeder Problem - Automated Farming</title>
 <link href=/Automated-Farming/css/nucleus.css?1643635743 rel=stylesheet>
 <link href=/Automated-Farming/css/fontawesome-all.min.css?1643635743 rel=stylesheet>
 <link href=/Automated-Farming/css/hybrid.css?1643635743 rel=stylesheet>
@@ -21,7 +21,7 @@
 <script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643635743></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/Automated-Farming/02_missionstatement/missionstatement/>
+<body data-url=/Automated-Farming/05_farmbot/weederprob/>
 <nav id=sidebar>
 <div id=header-wrapper>
 <div id=header>
@@ -41,13 +41,12 @@
 </div>
 <div class=highlightable>
 <ul class=topics>
-<li data-nav-id=/Automated-Farming/02_missionstatement/ title="1- Problem Search" class="dd-item
-parent">
+<li data-nav-id=/Automated-Farming/02_missionstatement/ title="1- Problem Search" class=dd-item>
 <a href=/Automated-Farming/02_missionstatement/>
 1- Problem Search
 </a>
 <ul>
-<li data-nav-id=/Automated-Farming/02_missionstatement/missionstatement/ title="Mission Statement" class="dd-item active">
+<li data-nav-id=/Automated-Farming/02_missionstatement/missionstatement/ title="Mission Statement" class=dd-item>
 <a href=/Automated-Farming/02_missionstatement/missionstatement/>
 Mission Statement
 </a>
@@ -88,7 +87,8 @@ Final Concept Selection
 </li>
 </ul>
 </li>
-<li data-nav-id=/Automated-Farming/05_farmbot/ title="4- Farmbot" class=dd-item>
+<li data-nav-id=/Automated-Farming/05_farmbot/ title="4- Farmbot" class="dd-item
+parent">
 <a href=/Automated-Farming/05_farmbot/>
 4- Farmbot
 </a>
@@ -103,7 +103,7 @@ A - Economical Analysis
 B - Bill of material
 </a>
 </li>
-<li data-nav-id=/Automated-Farming/05_farmbot/weederprob/ title="C - Weeder Problem" class=dd-item>
+<li data-nav-id=/Automated-Farming/05_farmbot/weederprob/ title="C - Weeder Problem" class="dd-item active">
 <a href=/Automated-Farming/05_farmbot/weederprob/>
 C - Weeder Problem
 </a>
@@ -170,7 +170,7 @@ C - Bill of Material
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-Mission Statement
+C - Weeder Problem
 </span>
 </div>
 <div class=progress>
@@ -179,12 +179,7 @@ Mission Statement
 <ul>
 <li>
 <ul>
-<li><a href=#title>Title</a></li>
-<li><a href=#product-description>Product Description</a></li>
-<li><a href=#benefit-proposition>Benefit Proposition</a></li>
-<li><a href=#primary-market>Primary Market</a></li>
-<li><a href=#secondary-market>Secondary Market</a></li>
-<li><a href=#assumptions-and-constraints>Assumptions and Constraints</a></li>
+<li></li>
 </ul>
 </li>
 </ul>
@@ -197,32 +192,16 @@ Mission Statement
 </div>
 <div id=body-inner>
 <h1>
-Mission Statement
+C - Weeder Problem
 </h1>
-<p>The first step in developing any project especially when it is focused and the attempt of solving a real-life problem that can touch the lives of a great deal of people is to have a well-defined well written mission statement and use it to guide the efforts of the team towards the solution. The team went through the process of writing its mission statement in the initial phases and supported it with other information to help better shed the light on what is required and narrow their focus on the exact problem to solve for exactly the targeted user.</p>
-<h3 id=title>Title</h3>
-<p>Automated Farming</p>
-<h3 id=product-description>Product Description</h3>
-<p>Robotic farming machine allowing farmers to automate simple, repetitive tasks such as water plants, eliminating weeds, and planting seeds by using a simple interface, so they can focus more on the quality of their produce and their customer’s experience</p>
-<h3 id=benefit-proposition>Benefit Proposition</h3>
-<ul>
-<li>Easy to deploy one stop solution.</li>
-<li>Simple to interact with and manipulate.</li>
-<li>Affordable.</li>
-<li>Upgradeable, customizable, and open source.</li>
-</ul>
-<h3 id=primary-market>Primary Market</h3>
-<p>Small-scale farmers and at home farmers.</p>
-<h3 id=secondary-market>Secondary Market</h3>
-<p>Hobbyists, enthusiasts, and research laboratories</p>
-<h3 id=assumptions-and-constraints>Assumptions and Constraints</h3>
-<ul>
-<li>Availability of materials (in Kuwait)</li>
-<li>Limited time and budget</li>
-<li>No lab/workshop access equipped with new technology</li>
-<li>Exposure to harsh weather/environment.</li>
-<li>Electrically powered components always require power (Batteries or hooked in)</li>
-</ul>
+<p>As previously stated, the device employs a rotary tool equipped with a 24 [v] DC motor to kill weeds, which may result in undesirable vibration throughout the system. After repeated use, the rotary blades may become damaged, resulting in blade imbalance. Unbalanced blades will generate a series of vibrations that will travel from the motor to the gantry. Vibrations will affect both the tool and the universal mount, dislocating them and potentially affecting their alignment and accuracy. The figure below shows the parts which might be affected by the vibrations.</p>
+<p><img src=/images/Prob1.png alt></p>
+<p>The cross-slide might be affected by the vibrations by loosening up the belt shown in the figure below and leading to an unstable movement along the gantry.</p>
+<p><img src=/images/Prob2.png alt></p>
+<p>Besides the vibration problem, there are additional issues such as the weeder&rsquo;s power consumption and weeder limitation. Due to the length of the blades, the weeder can only target large weeds and cannot eliminate small weeds. Additionally, because it is imprecise, it may cause damage to nearby plants. After stating all of these issues, it&rsquo;s evident that the primary improvement to Farmbot would be to implement a different method of weeding. An email was sent to the Farmbot company to discuss feasible product improvements (can be found in the Appendix)</p>
+<h4 id=initial-solution-approach>Initial Solution Approach</h4>
+<p>Since the Farmbot already has a UTM (universal tool mount) system then and the weed wacker is not fixed to the actual device then it can easily be swapped with a powerful laser module that has a UTM end on to it that can easily be operated by the same current software on the Farmbot with minor code adjustments. The following figures will show the initial design components and the general idea around the laser module to be added to the system which will be extensively discussed in the final Phase 3 version of the report.</p>
+<p><img src=/images/Prob3.png alt></p>
 <footer class=footline>
 </footer>
 </div>

@@ -1,0 +1,990 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.1">
+<meta name=description content>
+<link rel=icon href=/Automated-Farming/images/favicon.png type=image/png>
+<title>B - Bill of material - Automated Farming</title>
+<link href=/Automated-Farming/css/nucleus.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/fontawesome-all.min.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/hybrid.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/featherlight.min.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/auto-complete.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/theme.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/tabs.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/hugo-theme.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/theme-blue.css?1643635743 rel=stylesheet>
+<link href=/Automated-Farming/css/foo.css?1643635743 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643635743 rel=stylesheet>
+<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643635743></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/Automated-Farming/05_farmbot/bom/>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<a id=logo href=https://me459ku.github.io/Automated-Farming>
+<font size=6>Automated Farming</font>
+</a>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643635743></script>
+<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643635743></script>
+<script type=text/javascript>var baseurl="https://me459ku.github.io/Automated-Farming"</script>
+<script type=text/javascript src=/Automated-Farming/js/search.js?1643635743></script>
+</div>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/Automated-Farming/02_missionstatement/ title="1- Problem Search" class=dd-item>
+<a href=/Automated-Farming/02_missionstatement/>
+1- Problem Search
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/02_missionstatement/missionstatement/ title="Mission Statement" class=dd-item>
+<a href=/Automated-Farming/02_missionstatement/missionstatement/>
+Mission Statement
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/Automated-Farming/03_conceptdev/ title="2- Concept Development" class=dd-item>
+<a href=/Automated-Farming/03_conceptdev/>
+2- Concept Development
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/03_conceptdev/conceptgen/ title="A - Concept Generations" class=dd-item>
+<a href=/Automated-Farming/03_conceptdev/conceptgen/>
+A - Concept Generations
+</a>
+</li>
+<li data-nav-id=/Automated-Farming/03_conceptdev/prodspecs/ title="B - Product Specifications" class=dd-item>
+<a href=/Automated-Farming/03_conceptdev/prodspecs/>
+B - Product Specifications
+</a>
+</li>
+<li data-nav-id=/Automated-Farming/03_conceptdev/functional-decomposition/ title="C - Functional Decomposition" class=dd-item>
+<a href=/Automated-Farming/03_conceptdev/functional-decomposition/>
+C - Functional Decomposition
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/Automated-Farming/04_conceptsel/ title="3- Concept Selection" class=dd-item>
+<a href=/Automated-Farming/04_conceptsel/>
+3- Concept Selection
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/04_conceptsel/finalselection/ title="Final Concept Selection" class=dd-item>
+<a href=/Automated-Farming/04_conceptsel/finalselection/>
+Final Concept Selection
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/Automated-Farming/05_farmbot/ title="4- Farmbot" class="dd-item
+parent">
+<a href=/Automated-Farming/05_farmbot/>
+4- Farmbot
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/05_farmbot/econanalysis/ title="A - Economical Analysis" class=dd-item>
+<a href=/Automated-Farming/05_farmbot/econanalysis/>
+A - Economical Analysis
+</a>
+</li>
+<li data-nav-id=/Automated-Farming/05_farmbot/bom/ title="B - Bill of material" class="dd-item active">
+<a href=/Automated-Farming/05_farmbot/bom/>
+B - Bill of material
+</a>
+</li>
+<li data-nav-id=/Automated-Farming/05_farmbot/weederprob/ title="C - Weeder Problem" class=dd-item>
+<a href=/Automated-Farming/05_farmbot/weederprob/>
+C - Weeder Problem
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/Automated-Farming/06_prototype/ title="5- Prototype" class=dd-item>
+<a href=/Automated-Farming/06_prototype/>
+5- Prototype
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/06_prototype/proof/ title="A - Proof of Concept" class=dd-item>
+<a href=/Automated-Farming/06_prototype/proof/>
+A - Proof of Concept
+</a>
+</li>
+<li data-nav-id=/Automated-Farming/06_prototype/newdesign/ title="B - New Design" class=dd-item>
+<a href=/Automated-Farming/06_prototype/newdesign/>
+B - New Design
+</a>
+</li>
+<li data-nav-id=/Automated-Farming/06_prototype/bom/ title="C - Bill of Material" class=dd-item>
+<a href=/Automated-Farming/06_prototype/bom/>
+C - Bill of Material
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/Automated-Farming/07_concludingremarks/ title="6- Concluding Remarks" class=dd-item>
+<a href=/Automated-Farming/07_concludingremarks/>
+6- Concluding Remarks
+</a>
+</li>
+</ul>
+<section id=shortcuts>
+<h3>More</h3>
+<ul>
+<li>
+<a class=padding href=http://www.kuniv.edu.kw/><i class="fas fa-building"></i> Kuwait University</a>
+</li>
+<li>
+<a class=padding href=https://me459ku.github.io/><i class="fas fa-cubes"></i> ME459 Engineering Design</a>
+</li>
+<li>
+<a class=padding href=https://gohugo.io/><i class="fas fa-bookmark"></i> Other Link 1</a>
+</li>
+</ul>
+</section>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+B - Bill of material
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#extrusion>Extrusion:</a></li>
+<li><a href=#plates-and-brackets>Plates and Brackets</a></li>
+<li><a href=#plastic-parts>Plastic Parts</a></li>
+<li><a href=#fastners-and-hardware>Fastners and Hardware</a></li>
+<li><a href=#drivetrain>Drivetrain</a></li>
+<li><a href=#electronic-and-wiring>Electronic and Wiring</a></li>
+<li><a href=#tubing>Tubing</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+B - Bill of material
+</h1>
+<p>This tables below show the required quantity and the price of each component. It includes the extruisons, plates, brackets, plastic parts, fasteners, hardware, drive train, electronics, wiring, and tubing.</p>
+<h3 id=extrusion>Extrusion:</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>item</strong></th>
+<th style=text-align:center><strong>$/Unit</strong></th>
+<th style=text-align:center><strong>Qty</strong></th>
+<th style=text-align:center><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>Track Extrusion</td>
+<td style=text-align:center>$30.00</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$120.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Gantry Column</td>
+<td style=text-align:center>$15.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$30.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Gantry Main Beam</td>
+<td style=text-align:center>$35.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$35.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Z-Axis Extrusion</td>
+<td style=text-align:center>$20.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$20.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id=plates-and-brackets>Plates and Brackets</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>item</strong></th>
+<th style=text-align:center><strong>$/Unit</strong></th>
+<th style=text-align:center><strong>Qty</strong></th>
+<th style=text-align:center><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>Track End Plate</td>
+<td style=text-align:center>$12.00</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$48.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Track Joining Plate</td>
+<td style=text-align:center>$15.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$30.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Gantry Wheel Plate</td>
+<td style=text-align:center>$25.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$50.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Gantry Corner Bracket</td>
+<td style=text-align:center>$30.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$60.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Cross-Slide Plate</td>
+<td style=text-align:center>$25.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$25.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Z-Axis Motor Mount</td>
+<td style=text-align:center>$20.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$20.00</td>
+</tr>
+<tr>
+<td style=text-align:center>3-Slot Toolbay</td>
+<td style=text-align:center>$40.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$80.00</td>
+</tr>
+<tr>
+<td style=text-align:center>50mm Cable Carrier Mount</td>
+<td style=text-align:center>$8.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$8.00</td>
+</tr>
+<tr>
+<td style=text-align:center>80mm Cable Carrier Mount</td>
+<td style=text-align:center>$10.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$10.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Belt Clip</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>6</td>
+<td style=text-align:center>$18.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Z-Axis Hardstop</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Seed Trough Holder Mount</td>
+<td style=text-align:center>$5.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$5.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id=plastic-parts>Plastic Parts</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>item</strong></th>
+<th style=text-align:center><strong>$/Unit</strong></th>
+<th style=text-align:center><strong>Qty</strong></th>
+<th style=text-align:center><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>40mm Horizontal Cable Carrier Support</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>12</td>
+<td style=text-align:center>$36.00</td>
+</tr>
+<tr>
+<td style=text-align:center>60mm Horizontal Cable Carrier Support</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>6</td>
+<td style=text-align:center>$18.00</td>
+</tr>
+<tr>
+<td style=text-align:center>60mm Vertical Cable Carrier Support</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$12.00</td>
+</tr>
+<tr>
+<td style=text-align:center>60mm Cable Carrier Spacer Block</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$3.00</td>
+</tr>
+<tr>
+<td style=text-align:center>75mm Horizontal Motor Housing</td>
+<td style=text-align:center>$10.00</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>$30.00</td>
+</tr>
+<tr>
+<td style=text-align:center>80mm Vertical Motor Housing</td>
+<td style=text-align:center>$12.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$12.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Camera Mount Half</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Seeder</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Seed Bin</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Seed Tray</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$14.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Seed Trough</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Seed Trough Holder</td>
+<td style=text-align:center>$8.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$8.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Soil Sensor</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Solenoid Valve Mount</td>
+<td style=text-align:center>$6.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Universal Tool Mount</td>
+<td style=text-align:center>$30.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$30.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Vacuum Pump Housing</td>
+<td style=text-align:center>$15.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$15.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Vacuum Pump Mount</td>
+<td style=text-align:center>$6.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Watering Nozzle Top</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Watering Nozzle Bottom</td>
+<td style=text-align:center>$5.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$5.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Weeder</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Weeder Blades</td>
+<td style=text-align:center>$2.00</td>
+<td style=text-align:center>12</td>
+<td style=text-align:center>$24.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id=fastners-and-hardware>Fastners and Hardware</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>item</strong></th>
+<th style=text-align:center><strong>$/Unit</strong></th>
+<th style=text-align:center><strong>Qty</strong></th>
+<th style=text-align:center><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>M2.5 x 4mm Screws</td>
+<td style=text-align:center>$0.15</td>
+<td style=text-align:center>8</td>
+<td style=text-align:center>$1.20</td>
+</tr>
+<tr>
+<td style=text-align:center>M2.5 x 16mm M/F Standoffs *</td>
+<td style=text-align:center>$0.50</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$2.00</td>
+</tr>
+<tr>
+<td style=text-align:center>M3 x 6mm Screws</td>
+<td style=text-align:center>$0.10</td>
+<td style=text-align:center>10</td>
+<td style=text-align:center>$1.00</td>
+</tr>
+<tr>
+<td style=text-align:center>M3 x 12mm Screws</td>
+<td style=text-align:center>$0.15</td>
+<td style=text-align:center>40</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>M3 x 35mm Screws</td>
+<td style=text-align:center>$0.20</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$0.80</td>
+</tr>
+<tr>
+<td style=text-align:center>M3 Locknuts</td>
+<td style=text-align:center>$0.10</td>
+<td style=text-align:center>20</td>
+<td style=text-align:center>$2.00</td>
+</tr>
+<tr>
+<td style=text-align:center>M5 x 10mm Screws</td>
+<td style=text-align:center>$0.15</td>
+<td style=text-align:center>150</td>
+<td style=text-align:center>$22.50</td>
+</tr>
+<tr>
+<td style=text-align:center>M5 x 16mm Screws</td>
+<td style=text-align:center>$0.20</td>
+<td style=text-align:center>40</td>
+<td style=text-align:center>$8.00</td>
+</tr>
+<tr>
+<td style=text-align:center>M5 x 30mm Screws</td>
+<td style=text-align:center>$0.30</td>
+<td style=text-align:center>45</td>
+<td style=text-align:center>$13.50</td>
+</tr>
+<tr>
+<td style=text-align:center>M5 Flange Locknuts</td>
+<td style=text-align:center>$0.10</td>
+<td style=text-align:center>70</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+<tr>
+<td style=text-align:center>M5 x 6mm Spacers</td>
+<td style=text-align:center>$0.20</td>
+<td style=text-align:center>30</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>M5 x 6mm Eccentric Spacers</td>
+<td style=text-align:center>$2.00</td>
+<td style=text-align:center>15</td>
+<td style=text-align:center>$30.00</td>
+</tr>
+<tr>
+<td style=text-align:center>M5 Tee Nuts</td>
+<td style=text-align:center>$0.40</td>
+<td style=text-align:center>20</td>
+<td style=text-align:center>$8.00</td>
+</tr>
+<tr>
+<td style=text-align:center>20mm Nut Bar</td>
+<td style=text-align:center>$1.50</td>
+<td style=text-align:center>6</td>
+<td style=text-align:center>$9.00</td>
+</tr>
+<tr>
+<td style=text-align:center>40mm Nut Bar</td>
+<td style=text-align:center>$1.75</td>
+<td style=text-align:center>28</td>
+<td style=text-align:center>$49.00</td>
+</tr>
+<tr>
+<td style=text-align:center>60mm Nut Bar</td>
+<td style=text-align:center>$2.00</td>
+<td style=text-align:center>20</td>
+<td style=text-align:center>$40.00</td>
+</tr>
+<tr>
+<td style=text-align:center>100mm Nut Bar *</td>
+<td style=text-align:center>$2.50</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$5.00</td>
+</tr>
+<tr>
+<td style=text-align:center>25mm Wood Screws</td>
+<td style=text-align:center>$0.05</td>
+<td style=text-align:center>35</td>
+<td style=text-align:center>$1.75</td>
+</tr>
+<tr>
+<td style=text-align:center>Dowel Pins *</td>
+<td style=text-align:center>$2.00</td>
+<td style=text-align:center>6</td>
+<td style=text-align:center>$12.00</td>
+</tr>
+<tr>
+<td style=text-align:center>15 x 5 x 5mm Ring Magnets</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>21</td>
+<td style=text-align:center>$63.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Zip Ties *</td>
+<td style=text-align:center>$0.05 to $0.10</td>
+<td style=text-align:center>85</td>
+<td style=text-align:center>$5.25</td>
+</tr>
+<tr>
+<td style=text-align:center>Assembly Tools</td>
+<td style=text-align:center>$1.00 to $5.00</td>
+<td style=text-align:center>8</td>
+<td style=text-align:center>$32.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id=drivetrain>Drivetrain</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>item</strong></th>
+<th style=text-align:center><strong>$/Unit</strong></th>
+<th style=text-align:center><strong>Qty</strong></th>
+<th style=text-align:center><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>V-Wheel</td>
+<td style=text-align:center>$6.00</td>
+<td style=text-align:center>30</td>
+<td style=text-align:center>$180.00</td>
+</tr>
+<tr>
+<td style=text-align:center>X-Axis GT2 Timing Belt</td>
+<td style=text-align:center>$40.00 to $180.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$80.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Y-Axis GT2 Timing Belt</td>
+<td style=text-align:center>$20.00 to $30.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$20.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Belt Sleeve</td>
+<td style=text-align:center>$0.50</td>
+<td style=text-align:center>6</td>
+<td style=text-align:center>$3.00</td>
+</tr>
+<tr>
+<td style=text-align:center>20 Tooth GT2 Pulley</td>
+<td style=text-align:center>$6.00</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>$18.00</td>
+</tr>
+<tr>
+<td style=text-align:center>5mm to 8mm Shaft Coupling</td>
+<td style=text-align:center>$6.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Leadscrew</td>
+<td style=text-align:center>$35.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$35.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Leadscrew Block</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id=electronic-and-wiring>Electronic and Wiring</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>item</strong></th>
+<th style=text-align:center><strong>$/Unit</strong></th>
+<th style=text-align:center><strong>Qty</strong></th>
+<th style=text-align:center><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>Electronics Box</td>
+<td style=text-align:center>$95.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$95.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Power Supply</td>
+<td style=text-align:center>$60.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$60.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Power Supply Cable</td>
+<td style=text-align:center>$20.00 to $70.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$20.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Raspberry Pi 3</td>
+<td style=text-align:center>$40.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$40.00</td>
+</tr>
+<tr>
+<td style=text-align:center>MicroSD Card</td>
+<td style=text-align:center>$15.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$15.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Pi Adapter Board</td>
+<td style=text-align:center>$10.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$10.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Push Button</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>$35.00</td>
+</tr>
+<tr>
+<td style=text-align:center>LED Indicator</td>
+<td style=text-align:center>$5.00</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$20.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Farmduino</td>
+<td style=text-align:center>$120.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$120.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Raspberry Pi Power Cable</td>
+<td style=text-align:center>$5.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$5.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Farmduino Data Cable</td>
+<td style=text-align:center>$5.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$5.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Jumper Wire</td>
+<td style=text-align:center>$0.25</td>
+<td style=text-align:center>12</td>
+<td style=text-align:center>$3.00</td>
+</tr>
+<tr>
+<td style=text-align:center>NEMA 17 Stepper Motor with Rotary Encoder</td>
+<td style=text-align:center>$60.00</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$240.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Motor Cables</td>
+<td style=text-align:center>$15.00 to $32.00</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$80.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Encoder Cables</td>
+<td style=text-align:center>$20.00 to $37.00</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$100.00</td>
+</tr>
+<tr>
+<td style=text-align:center>X-Axis Cable Carrier</td>
+<td style=text-align:center>$40.00 to $200.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$40.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Y-Axis Cable Carrier</td>
+<td style=text-align:center>$50.00 to $80.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$50.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Z-Axis Cable Carrier</td>
+<td style=text-align:center>$30.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$30.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Universal Tool Mount Cable</td>
+<td style=text-align:center>$40.00 to $50.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$40.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Soil Sensor PCB</td>
+<td style=text-align:center>$6.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Solenoid Valve</td>
+<td style=text-align:center>$8.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$8.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Solenoid Valve Cable</td>
+<td style=text-align:center>$10.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$10.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Vacuum Pump</td>
+<td style=text-align:center>$15.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$15.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Vacuum Pump Cable</td>
+<td style=text-align:center>$15.00 to $20.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$15.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Peripheral Lead</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$6.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Camera</td>
+<td style=text-align:center>$30.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$30.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Camera Cable</td>
+<td style=text-align:center>$15.00 to $20.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$15.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Camera Calibration Card</td>
+<td style=text-align:center>$1.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$1.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Jumper Link</td>
+<td style=text-align:center>$0.25</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$1.00</td>
+</tr>
+<tr>
+<td style=text-align:center>LED Strip</td>
+<td style=text-align:center>$25.00 to $50.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$25.00</td>
+</tr>
+<tr>
+<td style=text-align:center>UTM PCB</td>
+<td style=text-align:center>$35.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$35.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Power Cord Protector</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+</tbody>
+</table>
+<h3 id=tubing>Tubing</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>item</strong></th>
+<th style=text-align:center><strong>$/Unit</strong></th>
+<th style=text-align:center><strong>Qty</strong></th>
+<th style=text-align:center><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>Water Tube</td>
+<td style=text-align:center>$5.00 to $35.00</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>$23.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Vacuum Tube</td>
+<td style=text-align:center>$1.00</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>$2.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Barbs</td>
+<td style=text-align:center>$6.00</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>$18.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Inline Air Filter</td>
+<td style=text-align:center>$10.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$10.00</td>
+</tr>
+<tr>
+<td style=text-align:center>90-Degree Barb</td>
+<td style=text-align:center>$2.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$2.00</td>
+</tr>
+<tr>
+<td style=text-align:center>NPT to Barb Adapter</td>
+<td style=text-align:center>$5.00</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>$15.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Garden Hose to Barb Adapter</td>
+<td style=text-align:center>$7.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$7.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Pressure Regulator</td>
+<td style=text-align:center>$8.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$8.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Rubber Gasket</td>
+<td style=text-align:center>$1.00</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>$4.00</td>
+</tr>
+<tr>
+<td style=text-align:center>O-rings</td>
+<td style=text-align:center>$0.50</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>$1.50</td>
+</tr>
+<tr>
+<td style=text-align:center>Luer Lock Adapter</td>
+<td style=text-align:center>$5.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$5.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Luer Lock Needles</td>
+<td style=text-align:center>$3.00</td>
+<td style=text-align:center>9</td>
+<td style=text-align:center>$27.00</td>
+</tr>
+<tr>
+<td style=text-align:center>Teflon Tape</td>
+<td style=text-align:center>$5.00</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>$5.00</td>
+</tr>
+</tbody>
+</table>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/Automated-Farming/js/clipboard.min.js?1643635743></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643635743></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643635743></script>
+<script src=/Automated-Farming/js/jquery.sticky.js?1643635743></script>
+<script src=/Automated-Farming/js/featherlight.min.js?1643635743></script>
+<script src=/Automated-Farming/js/highlight.pack.js?1643635743></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643635743></script>
+<script src=/Automated-Farming/js/learn.js?1643635743></script>
+<script src=/Automated-Farming/js/hugo-learn.js?1643635743></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>
