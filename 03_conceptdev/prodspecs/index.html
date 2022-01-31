@@ -1,0 +1,776 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.1">
+<meta name=description content>
+<link rel=icon href=/Automated-Farming/images/favicon.png type=image/png>
+<title>Product Specifications - Automated Farming</title>
+<link href=/Automated-Farming/css/nucleus.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/fontawesome-all.min.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/hybrid.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/featherlight.min.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/auto-complete.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/theme.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/tabs.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/hugo-theme.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/theme-blue.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/foo.css?1643625013 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643625013 rel=stylesheet>
+<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643625013></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/Automated-Farming/03_conceptdev/prodspecs/>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<a id=logo href=https://me459ku.github.io/Automated-Farming>
+<font size=6>Automated Farming</font>
+</a>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643625013></script>
+<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643625013></script>
+<script type=text/javascript>var baseurl="https://me459ku.github.io/Automated-Farming"</script>
+<script type=text/javascript src=/Automated-Farming/js/search.js?1643625013></script>
+</div>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/Automated-Farming/02_missionstatement/ title="Problem Search" class=dd-item>
+<a href=/Automated-Farming/02_missionstatement/>
+Problem Search
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/02_missionstatement/missionstatement/ title="Mission Statement" class=dd-item>
+<a href=/Automated-Farming/02_missionstatement/missionstatement/>
+Mission Statement
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/Automated-Farming/03_conceptdev/ title="Concept Development" class="dd-item
+parent">
+<a href=/Automated-Farming/03_conceptdev/>
+Concept Development
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/03_conceptdev/conceptgen/ title="Concept Generations" class=dd-item>
+<a href=/Automated-Farming/03_conceptdev/conceptgen/>
+Concept Generations
+</a>
+</li>
+<li data-nav-id=/Automated-Farming/03_conceptdev/functional-decomposition/ title="Functional Decomposition" class=dd-item>
+<a href=/Automated-Farming/03_conceptdev/functional-decomposition/>
+Functional Decomposition
+</a>
+</li>
+<li data-nav-id=/Automated-Farming/03_conceptdev/prodspecs/ title="Product Specifications" class="dd-item active">
+<a href=/Automated-Farming/03_conceptdev/prodspecs/>
+Product Specifications
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/Automated-Farming/04_conceptsel/ title="Concept Selection" class=dd-item>
+<a href=/Automated-Farming/04_conceptsel/>
+Concept Selection
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/04_conceptsel/finalselection/ title="Final Concept Selection" class=dd-item>
+<a href=/Automated-Farming/04_conceptsel/finalselection/>
+Final Concept Selection
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/Automated-Farming/05_manufacturing/ title=Manufacturing class=dd-item>
+<a href=/Automated-Farming/05_manufacturing/>
+Manufacturing
+</a>
+<ul>
+<li data-nav-id=/Automated-Farming/05_manufacturing/prototype-1/ title="Prototype I" class=dd-item>
+<a href=/Automated-Farming/05_manufacturing/prototype-1/>
+Prototype I
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=shortcuts>
+<h3>More</h3>
+<ul>
+<li>
+<a class=padding href=http://www.kuniv.edu.kw/><i class="fas fa-building"></i> Kuwait University</a>
+</li>
+<li>
+<a class=padding href=https://me459ku.github.io/><i class="fas fa-cubes"></i> ME459 Engineering Design</a>
+</li>
+<li>
+<a class=padding href=https://gohugo.io/><i class="fas fa-bookmark"></i> Other Link 1</a>
+</li>
+</ul>
+</section>
+<section id=footer>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+Product Specifications
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li></li>
+<li><a href=#list-of-metrics>List of Metrics</a></li>
+<li><a href=#target-specifications>Target Specifications</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Product Specifications
+</h1>
+<h4 id=customer-requirements-and-importance>Customer Requirements and Importance</h4>
+<p>To make use of the customer, the customer needs previously gathered in the initial market research stage must first be interpreted into semi-technical terms where the team can use to base their design and functionality. After the interpretation of the needs, it is also required to assign an importance rating for each of the interpreted customers' needs to help the team decide what needs they answer in their first iteration or so-called their minimum viable product. The interpreted needs with their respective importance rating (1 lowest & 5 is highest) are represented in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th style=text-align:center>Interpreted Customer Need</th>
+<th style=text-align:right>Importance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style=text-align:center>No permanent fasteners</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>2</td>
+<td style=text-align:center>Use standard parts that are easy to find and are av. for DIYer and enthusiasts</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>3</td>
+<td style=text-align:center>Detect when plants need to be watered</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>4</td>
+<td style=text-align:center>Detect when weeds emerge</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>5</td>
+<td style=text-align:center>Measure relative humidity</td>
+<td style=text-align:right>3</td>
+</tr>
+<tr>
+<td>6</td>
+<td style=text-align:center>Measure pH level of soil</td>
+<td style=text-align:right>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td style=text-align:center>Detect when crops are ready for harvest</td>
+<td style=text-align:right>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td style=text-align:center>Quality materials</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>9</td>
+<td style=text-align:center>Can be controlled by the regular farmer/person</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>10</td>
+<td style=text-align:center>Commonly used components</td>
+<td style=text-align:right>4</td>
+</tr>
+<tr>
+<td>11</td>
+<td style=text-align:center>Re-assemble</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>12</td>
+<td style=text-align:center>Open source</td>
+<td style=text-align:right>3</td>
+</tr>
+<tr>
+<td>13</td>
+<td style=text-align:center>Water plants</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>14</td>
+<td style=text-align:center>Measure Temp.</td>
+<td style=text-align:right>3</td>
+</tr>
+<tr>
+<td>15</td>
+<td style=text-align:center>Monitor health of plant</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>16</td>
+<td style=text-align:center>Harvest crops</td>
+<td style=text-align:right>1</td>
+</tr>
+<tr>
+<td>17</td>
+<td style=text-align:center>Tasks have a small no. of steps to be completed</td>
+<td style=text-align:right>4</td>
+</tr>
+<tr>
+<td>18</td>
+<td style=text-align:center>Kill weeds</td>
+<td style=text-align:right>5</td>
+</tr>
+<tr>
+<td>19</td>
+<td style=text-align:center>Mobile application</td>
+<td style=text-align:right>4</td>
+</tr>
+<tr>
+<td>20</td>
+<td style=text-align:center>Humidity regulation</td>
+<td style=text-align:right>3</td>
+</tr>
+<tr>
+<td>21</td>
+<td style=text-align:center>Supplement system with delivery</td>
+<td style=text-align:right>2</td>
+</tr>
+<tr>
+<td>22</td>
+<td style=text-align:center>Controllable light system</td>
+<td style=text-align:right>3</td>
+</tr>
+<tr>
+<td>23</td>
+<td style=text-align:center>Temp. control system (with vent.)</td>
+<td style=text-align:right>3</td>
+</tr>
+</tbody>
+</table>
+<p>From the previous table, the top 10 needs based on their importance can be summarized in the following list:</p>
+<ul>
+<li>No permanent fasteners with easy to find spare parts</li>
+<li>Detect when plants need to be watered and water them</li>
+<li>Detect the emergence of weeds and eliminate them</li>
+<li>Quality materials</li>
+<li>Can be controlled by the regular farmer/person</li>
+<li>Re-assemble-able</li>
+<li>Monitor health of plants
+This list gives an indication of what the targeted customer is looking for which offers insight into what features the system must have to be considered a minimum viable product, nevertheless, other needs should also be taken into account as this rating is subjective and when the time comes for the customer to pay its a completely different scenario, thus; the team must take into account not just the needs they think they need at the current time and consider how to build a product that can help pivot their life to a better place. This level of depth is not required by the team, but it would be nice to consider, making the other needs open for debate whether to be included or not which will be due to cost-benefit analysis as this project has a strict deadline.</li>
+</ul>
+<h3 id=list-of-metrics>List of Metrics</h3>
+<p>The customer needs must also be interpreted to technical terms for them to be measurable. Identifying the metrics for each need and assigning a unit to it will not just help in the understanding of the needs but will also pave the path for the upcoming steps where the team must benchmark their proposed solution against other currently existing alternatives in the market. The metrics and units are available in the following table.</p>
+<table>
+<thead>
+<tr>
+<th style=text-align:center><strong>No</strong></th>
+<th style=text-align:center><strong>Needs</strong></th>
+<th style=text-align:center><strong>Metric</strong></th>
+<th style=text-align:center><strong>Imp</strong></th>
+<th style=text-align:center><strong>Units</strong></th>
+<th style=text-align:center><strong>Desired</strong></th>
+<th style=text-align:center><strong>Target Value</strong></th>
+<th style=text-align:center><strong>further justification</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center>1</td>
+<td style=text-align:center>1,2,10,11,12</td>
+<td style=text-align:center>Generic Screws,Fasteners,Parts (Widely Av.)</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>List</td>
+<td style=text-align:center>From List</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>to be specified later</td>
+</tr>
+<tr>
+<td style=text-align:center>2</td>
+<td style=text-align:center>3,4,7,14,15,19</td>
+<td style=text-align:center>Smart Vision System</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>Binary</td>
+<td style=text-align:center>Yes</td>
+<td style=text-align:center>Yes</td>
+<td style=text-align:center>-</td>
+</tr>
+<tr>
+<td style=text-align:center>3</td>
+<td style=text-align:center>2,10</td>
+<td style=text-align:center>Number of places the items are accessible</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>List and Count</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>to be specified later</td>
+</tr>
+<tr>
+<td style=text-align:center>4</td>
+<td style=text-align:center>18</td>
+<td style=text-align:center>Min Avg. Radius of weed</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>mm</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>10mm</td>
+<td style=text-align:center>Reducing the size will increase the complexity of the weed detection system, hence smaller diameter is not needed since the system will not be able to detect a weed before that</td>
+</tr>
+<tr>
+<td style=text-align:center>5</td>
+<td style=text-align:center>18</td>
+<td style=text-align:center>Max Avg. Radius of weed</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>mm</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>50mm</td>
+<td style=text-align:center>the device shouldnt allow for weeds to reach that size so the edlimination criteria is smaller than that.</td>
+</tr>
+<tr>
+<td style=text-align:center>6</td>
+<td style=text-align:center>18</td>
+<td style=text-align:center>Accuracy of targeting</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>mm</td>
+<td style=text-align:center>small</td>
+<td style=text-align:center>5mm</td>
+<td style=text-align:center>Because of the above mentioned justifications</td>
+</tr>
+<tr>
+<td style=text-align:center>7</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>Accuracy of measurement (RH)</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>% Error</td>
+<td style=text-align:center>small</td>
+<td style=text-align:center>3%</td>
+<td style=text-align:center>Within industry standard for affordable and availble components and no further accuracy is needed for the targeted customer</td>
+</tr>
+<tr>
+<td style=text-align:center>8</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>Resolution of measurement (RH)</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center>Medium</td>
+<td style=text-align:center>3 to 5%</td>
+<td style=text-align:center>No further accuracy is needed for the application as a small deviation wouldnt have a huge effect espeicially for the use case of the product</td>
+</tr>
+<tr>
+<td style=text-align:center>9</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>Range of measurement (RH)</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center></td>
+<td style=text-align:center>10% to 90%</td>
+<td style=text-align:center>Most plants are grown within this range. 10% cacti and 90% for pinaples (tropical)</td>
+</tr>
+<tr>
+<td style=text-align:center>10</td>
+<td style=text-align:center>6</td>
+<td style=text-align:center>Range of measurement (PH)</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>PH (unitless)</td>
+<td style=text-align:center></td>
+<td style=text-align:center>0 to 14 (Standard)</td>
+<td style=text-align:center>This is an industry sandard and it covers the entire range including the needed range</td>
+</tr>
+<tr>
+<td style=text-align:center>11</td>
+<td style=text-align:center>6</td>
+<td style=text-align:center>Accuracy of measurement (PH)</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>PH (unitless)</td>
+<td style=text-align:center></td>
+<td style=text-align:center>0.1</td>
+<td style=text-align:center>It covers the needs of the application</td>
+</tr>
+<tr>
+<td style=text-align:center>12</td>
+<td style=text-align:center>6</td>
+<td style=text-align:center>Resolution of measurement (PH)</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>PH (unitless)</td>
+<td style=text-align:center></td>
+<td style=text-align:center>0.1</td>
+<td style=text-align:center>This is the res. for most availble meters, smaller res. are availble but are not needed since the range of PH for most plants is between 5 to 7.5 (some may require higher or lower)</td>
+</tr>
+<tr>
+<td style=text-align:center>13</td>
+<td style=text-align:center>8</td>
+<td style=text-align:center>Life</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>months</td>
+<td style=text-align:center>High</td>
+<td style=text-align:center>5 to 10 years</td>
+<td style=text-align:center>May differ later</td>
+</tr>
+<tr>
+<td style=text-align:center>14</td>
+<td style=text-align:center>13</td>
+<td style=text-align:center>Accuracy & Precision of watering</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>75%</td>
+<td style=text-align:center>since all that is required to to water the area that the plant is in and the water will get soaked up and the plant can get it through its roots</td>
+</tr>
+<tr>
+<td style=text-align:center>15</td>
+<td style=text-align:center>13</td>
+<td style=text-align:center>Min Radius of watering (plant)</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>mm</td>
+<td style=text-align:center>medium</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>doesnt matter after further analysis</td>
+</tr>
+<tr>
+<td style=text-align:center>16</td>
+<td style=text-align:center>13</td>
+<td style=text-align:center>Max Radius of watering (plant)</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>mm</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>1m</td>
+<td style=text-align:center>to make sure the area of any plant is covered</td>
+</tr>
+<tr>
+<td style=text-align:center>17</td>
+<td style=text-align:center>13</td>
+<td style=text-align:center>Nozzle exit pressure</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>kPa</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>65 to 200 kPa</td>
+<td style=text-align:center>to allow for the water to reach the desired lication and not harm the plants when its relaeased on top of it and this range is availble domestically and in most buildings thus it might eliminate the need of a pump</td>
+</tr>
+<tr>
+<td style=text-align:center>18</td>
+<td style=text-align:center>13</td>
+<td style=text-align:center>Resolution of amount of water released</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>mL/s</td>
+<td style=text-align:center>medium</td>
+<td style=text-align:center>10 mL/s</td>
+<td style=text-align:center>this is to be conntrolled to not over/under water the plants - cant be decided now since it is related to the nozzle exit size</td>
+</tr>
+<tr>
+<td style=text-align:center>19</td>
+<td style=text-align:center>14</td>
+<td style=text-align:center>Resolution of measurement</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>C</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>1C</td>
+<td style=text-align:center>no further res is rquired since all that is needed is to be within the range of the desired temperature and deviation by the amount of the desired value for the target wouldnt have a substantial effect for the use case of the device</td>
+</tr>
+<tr>
+<td style=text-align:center>20</td>
+<td style=text-align:center>14</td>
+<td style=text-align:center>Range of measurement</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>C</td>
+<td style=text-align:center>medium</td>
+<td style=text-align:center>0 to 60C</td>
+<td style=text-align:center>Most plants (for the use of the device to be built can only be grown in that range)</td>
+</tr>
+<tr>
+<td style=text-align:center>21</td>
+<td style=text-align:center>14</td>
+<td style=text-align:center>Accuracy and Precision of measurement</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center>medium</td>
+<td style=text-align:center>1 to 3%</td>
+<td style=text-align:center>equipment is widely availble and all that is needed is be in range of a required temperatue</td>
+</tr>
+<tr>
+<td style=text-align:center>22</td>
+<td style=text-align:center>17</td>
+<td style=text-align:center>Avg no. of steps for each task</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>no. of steps</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>must be compared with other devices on the market (will be decided in the benchmarking process)</td>
+</tr>
+<tr>
+<td style=text-align:center>23</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>Accuracy and Precision of detection</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>90%</td>
+<td style=text-align:center>this value needs to be high since it is somewhat harmful for the plant to not be watered when it is needed and for thart to be repeated multiple times</td>
+</tr>
+<tr>
+<td style=text-align:center>24</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>Accuracy and Precision of detection</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>90%</td>
+<td style=text-align:center>weeds will feed on the resources that are avialble for the main plants so they must be eliminated as soon as the emerge hence a high accuracy is required</td>
+</tr>
+<tr>
+<td style=text-align:center>25</td>
+<td style=text-align:center>7</td>
+<td style=text-align:center>Accuracy and Precision of detection</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>70%</td>
+<td style=text-align:center>leaving a crop for a while before harvesting it would/shouldnt have a huge effect (even getting it before it is 100% ripe)</td>
+</tr>
+<tr>
+<td style=text-align:center>26</td>
+<td style=text-align:center>9</td>
+<td style=text-align:center>No. of steps to setup</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>No. of steps</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>must be compared with other devices on the market (will be decided in the benchmarking process)</td>
+</tr>
+<tr>
+<td style=text-align:center>27</td>
+<td style=text-align:center>9</td>
+<td style=text-align:center>Ease of setup</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>Custom rating</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>must be compared with other devices on the market (will be decided in the benchmarking process)</td>
+</tr>
+<tr>
+<td style=text-align:center>28</td>
+<td style=text-align:center>9</td>
+<td style=text-align:center>Ease of use</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>Custom rating</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>must be compared with other devices on the market (will be decided in the benchmarking process)</td>
+</tr>
+<tr>
+<td style=text-align:center>29</td>
+<td style=text-align:center>9</td>
+<td style=text-align:center>Ease of troubleshooting</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>Custom rating</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>must be compared with other devices on the market (will be decided in the benchmarking process)</td>
+</tr>
+<tr>
+<td style=text-align:center>30</td>
+<td style=text-align:center>16</td>
+<td style=text-align:center>Types of crops that can be harvested</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>List</td>
+<td style=text-align:center>long list</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>-</td>
+</tr>
+<tr>
+<td style=text-align:center>31</td>
+<td style=text-align:center>16</td>
+<td style=text-align:center>Crops storage area</td>
+<td style=text-align:center>1</td>
+<td style=text-align:center>m3</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>-</td>
+<td style=text-align:center>To be specified later</td>
+</tr>
+<tr>
+<td style=text-align:center>32</td>
+<td style=text-align:center>21</td>
+<td style=text-align:center>No. of supplement type that can be stored</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>Count</td>
+<td style=text-align:center>medium</td>
+<td style=text-align:center>4 to 6</td>
+<td style=text-align:center>since multiple suppliments are usually needed - maybe the device can have an nexpansion kit</td>
+</tr>
+<tr>
+<td style=text-align:center>33</td>
+<td style=text-align:center>21</td>
+<td style=text-align:center>Amount of supplement that can be stored</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>L</td>
+<td style=text-align:center>medium</td>
+<td style=text-align:center>2 to 3 L</td>
+<td style=text-align:center>To allow for the storage of multiple types of suppliments (different compartments adding up to 2 to 3L with 500ml for each)</td>
+</tr>
+<tr>
+<td style=text-align:center>34</td>
+<td style=text-align:center>21</td>
+<td style=text-align:center>Exit pressure of supplement deliv. system</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>kPa</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>65 to 200 kPa</td>
+<td style=text-align:center>Similar to water exit pressure</td>
+</tr>
+<tr>
+<td style=text-align:center>35</td>
+<td style=text-align:center>20</td>
+<td style=text-align:center>Resolution of control (level of humidity)</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center>medium</td>
+<td style=text-align:center>2% to 5%</td>
+<td style=text-align:center>all is required is to be within the range of the desired RH values</td>
+</tr>
+<tr>
+<td style=text-align:center>36</td>
+<td style=text-align:center>20</td>
+<td style=text-align:center>Time to change 1% of rel. humidity per m3</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>S/m3</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>10min</td>
+<td style=text-align:center>since the range needed shouldnt vary by too much and the existance for this system is just to maintain the required value (10 min) should be enough. it should also be able to completly change the number but can take longer times to setup if it rquirees to go from 10% to 80% for example</td>
+</tr>
+<tr>
+<td style=text-align:center>37</td>
+<td style=text-align:center>22</td>
+<td style=text-align:center>power rating of system</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>Watt</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>50 to 150W</td>
+<td style=text-align:center>within the range of a small home appliance - excluding greenhouse env. control - in standby it should be as close as possible to 0</td>
+</tr>
+<tr>
+<td style=text-align:center>38</td>
+<td style=text-align:center>22</td>
+<td style=text-align:center>% of Area Covered</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>%</td>
+<td style=text-align:center>high</td>
+<td style=text-align:center>100%</td>
+<td style=text-align:center>Must cover the entire growing area to achive the required effect of emitating the sun</td>
+</tr>
+<tr>
+<td style=text-align:center>39</td>
+<td style=text-align:center>22</td>
+<td style=text-align:center>WaveLength Range</td>
+<td style=text-align:center>5</td>
+<td style=text-align:center>nm</td>
+<td style=text-align:center>custom</td>
+<td style=text-align:center>400-700nm</td>
+<td style=text-align:center>This is the range of wavvelength that replicate the sun</td>
+</tr>
+<tr>
+<td style=text-align:center>40</td>
+<td style=text-align:center>23</td>
+<td style=text-align:center>Resolution of control (level of Temp)</td>
+<td style=text-align:center>3</td>
+<td style=text-align:center>C</td>
+<td style=text-align:center>decent</td>
+<td style=text-align:center>1 to 3C</td>
+<td style=text-align:center>All that is needed is to be within the vicinity of the required growing temperature</td>
+</tr>
+<tr>
+<td style=text-align:center>41</td>
+<td style=text-align:center>23</td>
+<td style=text-align:center>Time to change temp 1C (Heating)</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>min</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>15</td>
+<td style=text-align:center>Faster change is not rquired for the application</td>
+</tr>
+<tr>
+<td style=text-align:center>42</td>
+<td style=text-align:center>23</td>
+<td style=text-align:center>Time to change temp 1C (cooling)</td>
+<td style=text-align:center>2</td>
+<td style=text-align:center>min</td>
+<td style=text-align:center>low</td>
+<td style=text-align:center>15</td>
+<td style=text-align:center>Faster change is not rquired for the application</td>
+</tr>
+<tr>
+<td style=text-align:center>43</td>
+<td style=text-align:center>19</td>
+<td style=text-align:center>Can be controlled by remotely</td>
+<td style=text-align:center>4</td>
+<td style=text-align:center>Binary</td>
+<td style=text-align:center>Yes</td>
+<td style=text-align:center>Yes</td>
+<td style=text-align:center>Not needed</td>
+</tr>
+</tbody>
+</table>
+<p>The first column of the previous table shows the number of the metric, the following column represents the number of the needs related to that specific metric which can be used to cross- reference with the former needs table. The third column shows the metric itself followed by its importance in the next column, and finally, the unit for each metric can be found in the last column.</p>
+<h3 id=target-specifications>Target Specifications</h3>
+<p>The product specifications are objective, precise, and measurements of the product performance and by meeting the specifications, the product meets customer requirements as defined in the Textbook. In order to obtain the specifications, the customer needs were organized into a hierarchy and each need was assigned with an importance and a metric as it was shown in the presented information above.
+The current target specifications are based on the components available in the market and/or the interpreted needs based on the understanding of the team members. The target specifications discussed below are not final and are subject to change after further market research is done. The change will be made with the objective of positioning the developed product in the area that allows for targeting the desired customer and keeping the costs as low as possible. The assumed target specifications are shown in table xx below with the justification (if any) for each one of them.</p>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/Automated-Farming/js/clipboard.min.js?1643625013></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643625013></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643625013></script>
+<script src=/Automated-Farming/js/jquery.sticky.js?1643625013></script>
+<script src=/Automated-Farming/js/featherlight.min.js?1643625013></script>
+<script src=/Automated-Farming/js/highlight.pack.js?1643625013></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643625013></script>
+<script src=/Automated-Farming/js/learn.js?1643625013></script>
+<script src=/Automated-Farming/js/hugo-learn.js?1643625013></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>

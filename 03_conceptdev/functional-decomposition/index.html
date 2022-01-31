@@ -6,19 +6,19 @@
 <meta name=description content>
 <link rel=icon href=/Automated-Farming/images/favicon.png type=image/png>
 <title>Functional Decomposition - Automated Farming</title>
-<link href=/Automated-Farming/css/nucleus.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/fontawesome-all.min.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/hybrid.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/featherlight.min.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/auto-complete.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/theme.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/tabs.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/hugo-theme.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/theme-blue.css?1643541081 rel=stylesheet>
-<link href=/Automated-Farming/css/foo.css?1643541081 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643541081 rel=stylesheet>
-<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643541081></script>
+<link href=/Automated-Farming/css/nucleus.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/fontawesome-all.min.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/hybrid.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/featherlight.min.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/auto-complete.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/theme.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/tabs.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/hugo-theme.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/theme-blue.css?1643625013 rel=stylesheet>
+<link href=/Automated-Farming/css/foo.css?1643625013 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643625013 rel=stylesheet>
+<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643625013></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/Automated-Farming/03_conceptdev/functional-decomposition/>
@@ -34,16 +34,16 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643541081></script>
-<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643541081></script>
+<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643625013></script>
+<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643625013></script>
 <script type=text/javascript>var baseurl="https://me459ku.github.io/Automated-Farming"</script>
-<script type=text/javascript src=/Automated-Farming/js/search.js?1643541081></script>
+<script type=text/javascript src=/Automated-Farming/js/search.js?1643625013></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
-<li data-nav-id=/Automated-Farming/02_missionstatement/ title="Problem Definition" class=dd-item>
+<li data-nav-id=/Automated-Farming/02_missionstatement/ title="Problem Search" class=dd-item>
 <a href=/Automated-Farming/02_missionstatement/>
-Problem Definition
+Problem Search
 </a>
 <ul>
 <li data-nav-id=/Automated-Farming/02_missionstatement/missionstatement/ title="Mission Statement" class=dd-item>
@@ -59,33 +59,31 @@ parent">
 Concept Development
 </a>
 <ul>
+<li data-nav-id=/Automated-Farming/03_conceptdev/conceptgen/ title="Concept Generations" class=dd-item>
+<a href=/Automated-Farming/03_conceptdev/conceptgen/>
+Concept Generations
+</a>
+</li>
 <li data-nav-id=/Automated-Farming/03_conceptdev/functional-decomposition/ title="Functional Decomposition" class="dd-item active">
 <a href=/Automated-Farming/03_conceptdev/functional-decomposition/>
 Functional Decomposition
 </a>
 </li>
-</ul>
-</li>
-<li data-nav-id=/Automated-Farming/04_detaildesign/ title="Detailed Design" class=dd-item>
-<a href=/Automated-Farming/04_detaildesign/>
-Detailed Design
-</a>
-<ul>
-<li data-nav-id=/Automated-Farming/04_detaildesign/analysis/ title=Analysis class=dd-item>
-<a href=/Automated-Farming/04_detaildesign/analysis/>
-Analysis
+<li data-nav-id=/Automated-Farming/03_conceptdev/prodspecs/ title="Product Specifications" class=dd-item>
+<a href=/Automated-Farming/03_conceptdev/prodspecs/>
+Product Specifications
 </a>
 </li>
 </ul>
 </li>
-<li data-nav-id=/Automated-Farming/06_abdulwahabing/ title=Abdulwahabing class=dd-item>
-<a href=/Automated-Farming/06_abdulwahabing/>
-Abdulwahabing
+<li data-nav-id=/Automated-Farming/04_conceptsel/ title="Concept Selection" class=dd-item>
+<a href=/Automated-Farming/04_conceptsel/>
+Concept Selection
 </a>
 <ul>
-<li data-nav-id=/Automated-Farming/06_abdulwahabing/prototype-1/ title="Prototype I" class=dd-item>
-<a href=/Automated-Farming/06_abdulwahabing/prototype-1/>
-Prototype I
+<li data-nav-id=/Automated-Farming/04_conceptsel/finalselection/ title="Final Concept Selection" class=dd-item>
+<a href=/Automated-Farming/04_conceptsel/finalselection/>
+Final Concept Selection
 </a>
 </li>
 </ul>
@@ -140,7 +138,20 @@ Functional Decomposition
 </div>
 <div class=progress>
 <div class=wrapper>
-<nav id=TableOfContents></nav>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#watering>Watering</a></li>
+<li><a href=#weeding>Weeding</a></li>
+<li><a href=#seed-planting>Seed Planting</a></li>
+<li><a href=#supplement-system>Supplement System</a></li>
+<li><a href=#climate-control>Climate Control</a></li>
+<li><a href=#harvesting>Harvesting</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
@@ -151,6 +162,49 @@ Functional Decomposition
 <h1>
 Functional Decomposition
 </h1>
+<h3 id=watering>Watering</h3>
+<p><img src=images/Watering.png alt>
+This diagram illustrates the function decomposition for automatic plant watering. Three system inputs are required: energy in the form of electrical power, water in the form of a fluid, and a command informing the system that it is time to water the plants. The system has two outputs: water to be released on the plants and a signal confirming the plant watering process. When the energy input is accepted as external energy and used to increase the water pressure, the water input is accepted by the system, and the command indicating the plant&rsquo;s needs is accepted, the watering process is initiated.
+The system will accept the water input and use the energy input to increase the pressure of the water, which will then wait at the end of a valve for the watering input command to release the water flow and accomplish the objective of watering the plants, triggering the output.</p>
+<h3 id=weeding>Weeding</h3>
+<p><img src=images/Weeding.png alt>
+The figure above illustrates the functional decomposition required for weeding. After receiving the command to check for weeds, the system uses electrical energy to scan the area and, if a weed is detected, the system moves the weeder in accordance with the weed&rsquo;s location and size. After that, the weeder will begin eradicating the weed and will signal when it is complete. In contrast, if the area is scanned and no weeds are detected, the system will transmit a signal indicating that no weeds were detected.
+The weeding functional decomposition helped with choosing the mechanisms and techniques of the subsystems as follow:
+<img src=images/TreeEnergy.jpeg alt></p>
+<p>The figure above shows the classification tree for accepting the external energy. Answering the following questions were useful to choose the techniques:</p>
+<ul>
+<li>What kind of energy need to be saved?</li>
+<li>Is it a renewable power source or it doesn’t matter?</li>
+<li>What kind of power source?
+Results in choosing the wall outlet which is a non-renewable power source for electrical energy.</li>
+</ul>
+<p><img src=images/TreeWeed.jpeg alt></p>
+<p>The figure above shows the classification tree for weed elimination. Answering the following questions was useful to choose the techniques:</p>
+<ul>
+<li>What are the techniques that can be used? Is it a combination of more than one?</li>
+<li>What tools can be used for each technique?
+Result in choosing a laser which is an electrical tool capable of burning the weeds.</li>
+</ul>
+<p><img src=images/TreeScan.jpeg alt></p>
+<p>The figure above shows the classification tree for the area scanning techniques Answering the following questions were useful to choose the techniques:</p>
+<ul>
+<li>What kind of scanner needs to be used?</li>
+<li>What kind of scanning tool?</li>
+<li>How does the scanning tool work?
+Result in choosing a regular video camera to scan the planting area and looks for weeds.</li>
+</ul>
+<h3 id=seed-planting>Seed Planting</h3>
+<p><img src=images/SeedPlanting.png alt>
+This figure shows the functional decomposition for seed planting. The system has three inputs: energy in the form of electrical power to supply the system with the necessary power to perform the tasks, The seeds are used as the planting material, and a command is used to inform the system about the plants. The system has two outputs: the seed as the material pushed beneath the soil at the proper depth and a signal informing the system of the planting&rsquo;s completion and information. When external energy is accepted and used to power the seed collection and planting mechanisms, seeds are stored and planted, and the planting command is accepted to initiate the planting process, the inputs and outputs interact.</p>
+<h3 id=supplement-system>Supplement System</h3>
+<p><img src=images/SupplementSystem.png alt>
+This figure shows the functional breakdown of the supplement system. The system will begin by scanning for deficiencies in the plants and storing the necessary supplements. The system will then send a signal indicating the location and type of supplement required if a deficiency is detected in a plant. Following that, it will direct the nozzle to the desired location and increase the supplement&rsquo;s pressure using electrical energy. This process results in the release of the supplement onto the plant, along with a signal indicating its presence. If no deficiency is detected, the system will send a signal indicating that the plant did not require additional nutrients.</p>
+<h3 id=climate-control>Climate Control</h3>
+<p><img src=images/ClimateControl.png alt>
+This is figure illustrates the functional decomposition for the climate control system. The system has five inputs: energy in the form of electrical power, water as the fluid, and three signals that inform the system about the temperature, humidity, and time. The system produces no outputs because it is constantly monitoring the climate conditions. The system is designed to accept ally electrical energy, and distribute it to the conditioning devices. Accept the water and use it to humidify or dehumidify the surrounding environment. The system will determine whether the current climate conditions are desirable or not and will turn on/off the conditioning devices accordingly.</p>
+<h3 id=harvesting>Harvesting</h3>
+<p><img src=images/Harvesting.png alt>
+This is the harvesting system&rsquo;s functional decomposition. The system will begin scanning the area immediately for crops that require harvesting. If crops are detected, the system transmits a signal to the picker indicating their location, which the picker then moves to using electrical energy. The picker will then collect the crops and determine if additional crops need to be harvested or stored. If, on the other hand, the system detects that the crops are still growing, it will send a signal indicating that no further action is required.</p>
 <footer class=footline>
 </footer>
 </div>
@@ -161,16 +215,16 @@ Functional Decomposition
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/Automated-Farming/js/clipboard.min.js?1643541081></script>
-<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643541081></script>
-<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643541081></script>
-<script src=/Automated-Farming/js/jquery.sticky.js?1643541081></script>
-<script src=/Automated-Farming/js/featherlight.min.js?1643541081></script>
-<script src=/Automated-Farming/js/highlight.pack.js?1643541081></script>
+<script src=/Automated-Farming/js/clipboard.min.js?1643625013></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643625013></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643625013></script>
+<script src=/Automated-Farming/js/jquery.sticky.js?1643625013></script>
+<script src=/Automated-Farming/js/featherlight.min.js?1643625013></script>
+<script src=/Automated-Farming/js/highlight.pack.js?1643625013></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643541081></script>
-<script src=/Automated-Farming/js/learn.js?1643541081></script>
-<script src=/Automated-Farming/js/hugo-learn.js?1643541081></script>
+<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643625013></script>
+<script src=/Automated-Farming/js/learn.js?1643625013></script>
+<script src=/Automated-Farming/js/hugo-learn.js?1643625013></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
