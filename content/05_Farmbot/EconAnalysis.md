@@ -113,8 +113,8 @@ seeds|12|1.75|12|252
 *Detailed tables can be found in the appendix.
 After generating the tables in the appendix the following graphs were plotted to better help understand the results. For the first two figures show the results for the small scale options of owning 1 device and the expenses over time associated with each of the options available to the consumer.
 
-![](/images/Econ1.png)
-![](/images/Econ2.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Econ1.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Econ2.png)
 
 
 
@@ -123,8 +123,8 @@ In the previously presented figures the numbers associated with operating and ow
 For the following graphs the same concept above is used but for a bigger sized growing area were made as the Farmbot family offers an XL version for both the Farmbot Express and the Farmbot Genies, and their respective calculations can be found in the following figures.
 
 
-![](/images/Econ3.png)
-![](/images/Econ4.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Econ3.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Econ4.png)
 
 
 Similar to the figures above for the single regular size Farmbot the numbers for the XL versions of the Farmbot were studied and plotted as shown in figures 35 and 36. Both version the regular and the XL share about the same breakeven point, but as it will be discovered in the next part of the ROI study when upscaling with multiple devices more interesting results show up.
@@ -132,9 +132,9 @@ For the following and last section of the ROI calculations the comparison of own
 
 
 
-![](/images/Econ5.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Econ5.png)
 
-![](/images/Econ6.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Econ6.png)
 
 
 

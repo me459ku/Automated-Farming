@@ -9,34 +9,34 @@ In this section of the report the team will demonstrate the various methods used
 
 
 #### Concept 1 Tertill
-![](/Automated-Farming/images/ertil.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Tertil.png)
 Tertill is a solar-powered weeding robot that looks for weeds every day. It has a solar panel placed on the top and provides it with all the power needed to detect the weeds within an area of (200 [ft^2], 18.6 [m^2]). There are two techniques to prevent the weeds from growing in the planting area. The first technique uses a weed whacker that cuts the weed depending on the plant's height and it will cut all the plants below half-inch height. The second technique is preventing the weeds from growing during their vulnerable stages by moving the soils repeatedly around them using its wheels. The device uses a touch panel with a good sensitivity level to detect the actual plants and to prevent running into them. The body of the device is made of polycarbonate which can stand through hot and cold climate conditions. There are some limitations to using the device correctly. The device might mistake a short plant for weed and to prevent that, each newly planted seed must be surrounded by a physical barrier longer than half-inch. The plants must be spaced a foot apart from each other for the device to move between them. The weed wacker should be replaced and it lasts for one or two months. The soil level should be balanced to have better performance and prevent the wheels from getting stuck. The device uses a lithium battery that can be charged and keeps the device working through the night. The 
  
  
  
  #### Concept 2 Dino
-![](/images/Dino.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Dino.png)
 Dino is an automated weeding machine for high scale farming. It uses deep learning to detect the plants, uses a real-time kinematic GPS, sensors, and cameras to navigate and scan the surroundings. It can count the plants and can-do crops mapping. It uses electricity to do the tasks and drive the four motors which are connected to the wheels. The machine covers about 40468.6 [m^2] per day. The price is expected to start from 50,000$ to 100,000$.
 
 
 #### Concept 3 Farmbot
-![](/images/Farmbot.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Farmbot.png)
 Farmbot Genesis is an open-source farming gantry system that can do multiple tasks such as watering, planting, health monitoring, weed detection, and weed elimination. It can do tasks in three dimensions which are the X, Y, and Z-axis. It needs to be connected to electricity around the clock to do its job all the time. The Genesis XL has dimensions of 3 [m] of gantry width
 and 6 [m] track length which results in 18 [m^2] of planting area. It can grow plants within the maximum height which is 0.5 [m]. Farmbot cost 4,995$ for the Genesis XL latest version.
 
 
 #### Concept 4 AVO
-![](/images/Avo.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Avo.png)
 AVO is a fully automated robot that is used to eradicate weeds. It is powered by solar panels and equipped with a lidar system that detects obstacles and people. AVO includes embedded software for treating a variety of crops. Additionally, it includes a mobile application that enables remote control. It consumes 95% fewer weedkillers than conventional methods. AVO is 750 kg in weight and uses an ultra-targeted spraying method with an accuracy of 8 x 3 cm to reach each plant. It can cover up to ten hectares per day.
 
 
 #### Concept 5 MARS
-![](/images/Mars.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Mars.png)
 MARS is a seed-planting mobile agriculture robot. It uses satellite navigation and cloud-based data management to track the location and planting time of each seed. Additionally, it employs an algorithm to determine the optimal path and time required to complete the task. MARS can operate in swarms of six to twelve units that cover an area of one hectare per hour. MARS electric motors have a rating of 400 W and consume 70% less energy than tractors. It is simple to assemble, compact in size, lightweight, and easy to maintain.
 
 
 #### Concept 6 Argas T-16
-![](/images/Argas.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Argas.png)
 The Argas T-16 is an automated agriculture drone used to water large areas of plants. It is equipped with a 16-liter tank, four delivery pumps, and eight sprinklers. The drone can cover ten hectares per hour. It is equipped with a radar system that utilizes digital beamforming technology to operate the drone at any time of day or night. Additionally, this technology scans the area for obstacles. The drone's control range is 3 kilometers. Under normal operating conditions, the Argas T-16 is dustproof, waterproof, and corrosion-resistant.
  Figure 23: Concept 6 (Argas T-16)
 34
