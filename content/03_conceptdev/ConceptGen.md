@@ -1,10 +1,9 @@
 ---
-title: "Concept Generations"
+title: "A - Concept Generations"
 date: 2022-01-16T09:40:39+03:00
 draft: false
 ---
 
-# Concept Generation
 The team conducted extensive research on existing solutions in the market for both large- and small-scale applications when developing the concept for this project. After spending sufficient time independently researching solutions, the team decided to hold a meeting for a couple of brainstorming sessions during which they employed a variety of brainstorming strategies and concluded the series of brainstorming sessions with a set of concept sketches generated using the C-sketch method, as illustrated below.
 
 ### Idea 1
