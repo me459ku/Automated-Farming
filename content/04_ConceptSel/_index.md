@@ -9,7 +9,7 @@ In this section of the report the team will demonstrate the various methods used
 
 
 #### Concept 1 Tertill
-![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Tertil.png)
+![](https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/tertil.png)
 Tertill is a solar-powered weeding robot that looks for weeds every day. It has a solar panel placed on the top and provides it with all the power needed to detect the weeds within an area of (200 [ft^2], 18.6 [m^2]). There are two techniques to prevent the weeds from growing in the planting area. The first technique uses a weed whacker that cuts the weed depending on the plant's height and it will cut all the plants below half-inch height. The second technique is preventing the weeds from growing during their vulnerable stages by moving the soils repeatedly around them using its wheels. The device uses a touch panel with a good sensitivity level to detect the actual plants and to prevent running into them. The body of the device is made of polycarbonate which can stand through hot and cold climate conditions. There are some limitations to using the device correctly. The device might mistake a short plant for weed and to prevent that, each newly planted seed must be surrounded by a physical barrier longer than half-inch. The plants must be spaced a foot apart from each other for the device to move between them. The weed wacker should be replaced and it lasts for one or two months. The soil level should be balanced to have better performance and prevent the wheels from getting stuck. The device uses a lithium battery that can be charged and keeps the device working through the night. The 
  
  
