@@ -10,8 +10,8 @@ Automated farming was targeted for the roots in has in sustainability and self-s
 ## Team Members
 |   |   |   |   | 
 |---|---|---|---|
-|Bold Key| Value1 | Value1 | Value1 | bla |
-| Yousef Almatrouk | AbdulAziz Almeklef | AbdulWahab AlSaleh | Abdullah Boshaiba |
+|![](https://raw.githubusercontent.com/me459ku/Automated-Farming/b736f6c47cd7599d0f2b2fa14c04fece704fcb53/img/PhotoYousef.jpg)| <img src="https://raw.githubusercontent.com/me459ku/Automated-Farming/b736f6c47cd7599d0f2b2fa14c04fece704fcb53/img/PhotoYousef.jpg" alt="nan" width="10"/> | Value1 | Value1 | bla |
+| __Yousef Almatrouk__ | AbdulAziz Almeklef | AbdulWahab AlSaleh | Abdullah Boshaiba |
 
 ## Results
 
