@@ -6,19 +6,19 @@
 <meta name=description content>
 <link rel=icon href=/Automated-Farming/images/favicon.png type=image/png>
 <title>C - Weeder Problem - Automated Farming</title>
-<link href=/Automated-Farming/css/nucleus.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/fontawesome-all.min.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/hybrid.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/featherlight.min.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/auto-complete.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/theme.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/tabs.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/hugo-theme.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/theme-blue.css?1643707938 rel=stylesheet>
-<link href=/Automated-Farming/css/foo.css?1643707938 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643707938 rel=stylesheet>
-<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643707938></script>
+<link href=/Automated-Farming/css/nucleus.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/fontawesome-all.min.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/hybrid.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/featherlight.min.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/perfect-scrollbar.min.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/auto-complete.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/atom-one-dark-reasonable.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/theme.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/tabs.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/hugo-theme.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/theme-blue.css?1643708148 rel=stylesheet>
+<link href=/Automated-Farming/css/foo.css?1643708148 rel=stylesheet><link href=/Automated-Farming/css/bar.css?1643708148 rel=stylesheet>
+<script src=/Automated-Farming/js/jquery-3.3.1.min.js?1643708148></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/Automated-Farming/05_farmbot/weederprob/>
@@ -34,10 +34,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643707938></script>
-<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643707938></script>
+<script type=text/javascript src=/Automated-Farming/js/lunr.min.js?1643708148></script>
+<script type=text/javascript src=/Automated-Farming/js/auto-complete.js?1643708148></script>
 <script type=text/javascript>var baseurl="https://me459ku.github.io/Automated-Farming"</script>
-<script type=text/javascript src=/Automated-Farming/js/search.js?1643707938></script>
+<script type=text/javascript src=/Automated-Farming/js/search.js?1643708148></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
@@ -195,13 +195,13 @@ C - Weeder Problem
 C - Weeder Problem
 </h1>
 <p>As previously stated, the device employs a rotary tool equipped with a 24 [v] DC motor to kill weeds, which may result in undesirable vibration throughout the system. After repeated use, the rotary blades may become damaged, resulting in blade imbalance. Unbalanced blades will generate a series of vibrations that will travel from the motor to the gantry. Vibrations will affect both the tool and the universal mount, dislocating them and potentially affecting their alignment and accuracy. The figure below shows the parts which might be affected by the vibrations.</p>
-<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Prob1.png alt></p>
-<p>The cross-slide might be affected by the vibrations by loosening up the belt shown in the figure below and leading to an unstable movement along the gantry.</p>
-<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884adcfbc39a55c8f002ee84aba6/img/Prob2.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/ac4ccc6f7b4fcc42fc9c7cef8a5c075838f1ea2a/img/Prob1.png alt></p>
+<p>The cross-slide might be affected by the vibrations by loosening up the belt shown in the figure below and leading to an unstable movement along the gantry.
+<img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/ac4ccc6f7b4fcc42fc9c7cef8a5c075838f1ea2a/img/Prob2.png alt></p>
 <p>Besides the vibration problem, there are additional issues such as the weeder&rsquo;s power consumption and weeder limitation. Due to the length of the blades, the weeder can only target large weeds and cannot eliminate small weeds. Additionally, because it is imprecise, it may cause damage to nearby plants. After stating all of these issues, it&rsquo;s evident that the primary improvement to Farmbot would be to implement a different method of weeding. An email was sent to the Farmbot company to discuss feasible product improvements (can be found in the Appendix)</p>
 <h4 id=initial-solution-approach>Initial Solution Approach</h4>
 <p>Since the Farmbot already has a UTM (universal tool mount) system then and the weed wacker is not fixed to the actual device then it can easily be swapped with a powerful laser module that has a UTM end on to it that can easily be operated by the same current software on the Farmbot with minor code adjustments. The following figures will show the initial design components and the general idea around the laser module to be added to the system which will be extensively discussed in the final Phase 3 version of the report.</p>
-<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/16131ecf0a98884xadcfbc39a55c8f002ee84aba6/img/Prob3.png alt></p>
+<p><img src=https://raw.githubusercontent.com/me459ku/Automated-Farming/ac4ccc6f7b4fcc42fc9c7cef8a5c075838f1ea2a/img/Prob3.png alt></p>
 <footer class=footline>
 </footer>
 </div>
@@ -212,16 +212,16 @@ C - Weeder Problem
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/Automated-Farming/js/clipboard.min.js?1643707938></script>
-<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643707938></script>
-<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643707938></script>
-<script src=/Automated-Farming/js/jquery.sticky.js?1643707938></script>
-<script src=/Automated-Farming/js/featherlight.min.js?1643707938></script>
-<script src=/Automated-Farming/js/highlight.pack.js?1643707938></script>
+<script src=/Automated-Farming/js/clipboard.min.js?1643708148></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.min.js?1643708148></script>
+<script src=/Automated-Farming/js/perfect-scrollbar.jquery.min.js?1643708148></script>
+<script src=/Automated-Farming/js/jquery.sticky.js?1643708148></script>
+<script src=/Automated-Farming/js/featherlight.min.js?1643708148></script>
+<script src=/Automated-Farming/js/highlight.pack.js?1643708148></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643707938></script>
-<script src=/Automated-Farming/js/learn.js?1643707938></script>
-<script src=/Automated-Farming/js/hugo-learn.js?1643707938></script>
+<script src=/Automated-Farming/js/modernizr.custom-3.6.0.js?1643708148></script>
+<script src=/Automated-Farming/js/learn.js?1643708148></script>
+<script src=/Automated-Farming/js/hugo-learn.js?1643708148></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
